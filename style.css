@@ -990,7 +990,7 @@ svg {
 }
 
 .press-section {
-  padding: 6rem 2rem;
+  padding: 7em 4em;
 }
 .press-section .press-header {
   display: flex;
@@ -1059,31 +1059,76 @@ svg {
   text-overflow: ellipsis;
 }
 
-.cta-section {
+.newsletter-cta {
+  background-color: #f4a300;
+  padding: 4rem 2rem;
+  border-radius: 1.5rem;
+  margin: 1em auto 3em;
+  max-width: 90%;
+  text-align: center;
+  color: white;
+}
+.newsletter-cta .cta-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: center;
 }
-.cta-section .cta-title {
-  font-family: var(--heading-font);
-  font-size: 5vw;
-  font-weight: 700;
-  overflow: hidden;
+.newsletter-cta .brand img {
+  width: 40%;
+  opacity: 50%;
 }
-.cta-section .cta-img {
-  height: 300px;
+.newsletter-cta .cta-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
   width: 80%;
-  position: relative;
-  overflow: hidden;
-  border-radius: 8px;
 }
-.cta-section .cta-img img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  position: absolute;
+.newsletter-cta .cta-content .cta-heading {
+  font-family: var(--heading-font);
+  font-size: 2vw;
+  font-weight: 500;
   overflow: hidden;
-  height: 100%;
+  text-align: left;
+}
+.newsletter-cta .cta-content .cta-form {
+  display: flex;
+  flex-direction: row;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  max-width: 900px;
   width: 100%;
+}
+.newsletter-cta .cta-content .cta-form input {
+  flex: 1;
+  padding: 1rem;
+  border: none;
+  font-size: 1rem;
+  color: #fff;
+}
+.newsletter-cta .cta-content .cta-form input::-moz-placeholder {
+  color: #ffd6b3;
+}
+.newsletter-cta .cta-content .cta-form input::placeholder {
+  color: #ffd6b3;
+}
+.newsletter-cta .cta-content .cta-form input:focus {
+  outline: none;
+}
+.newsletter-cta .cta-content .cta-form button {
+  background: #212121;
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.newsletter-cta .cta-content .cta-form button:hover {
+  background: #ffc369;
+  color: #000;
 }
 
 .footer {
